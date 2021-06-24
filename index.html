@@ -13,41 +13,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--link mapbox--><!--Pagina: https://www.mapbox.com/-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body>
     <!--Navbar start-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">Jardín | Nuestro mundo limpio.</a>
+            <img src="/images/logo.png" width="280" height="50" alt="Logo garden life">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
-                <li class="nav-item dropdown">
-                    <a class="btn btn-success dropdown-toggle me-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        ¿Cómo hacer un jardín en casa?
-                    </a>
-                    <ul class="dropdown-menu ms-lg-auto" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#paso1">Determina el espacio</a></li>
-                        <li><a class="dropdown-item" href="#paso2">Prepara la zona</a></li>
-                        <li><a class="dropdown-item" href="#paso3">Labra la tierra</a></li>
-                        <li><a class="dropdown-item" href="#paso4">Elige las plantas</a></li>
-                        <li><a class="dropdown-item" href="#paso5">Compra flores o semillas</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="btn btn-outline-success" href="#" role="button">Más información</a></li>
-                    </ul>
-                </li>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a class="btn btn-success" href="#learn" role="button">Nosotros</a>
-                    <a class="btn btn-success" href="#questions" role="button">Preguntas frecuentes</a>
-                </div>
+                <ul class="navbar-nav me-auto mb-2 w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menú
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#paso1">Determina el espacio</a></li> 
+                          <li><a class="dropdown-item" href="#paso2">Prepara la zona</a></li>
+                          <li><a class="dropdown-item" href="#paso3">Labra la tierra</a></li>
+                          <li><a class="dropdown-item" href="#paso4">Elige las plantas</a></li>
+                          <li><a class="dropdown-item" href="#paso5">Compra flores o semillas</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Más información</a></li>
+                        </ul>
+                    </li>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a class="btn btn-success" href="#learn" role="button">Nosotros</a>
+                        <a class="btn btn-success" href="#questions" role="button">Preguntas frecuentes</a>
+                    </div>
+                </ul>
             </div>
         </div>
     </nav>
      <!--Navbar stop-->
 
      <!--section start-->
-     <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+     <section class="bg-dark text-light p-4 p-lg-5 pt-lg-5 text-center text-sm-start">
         <div class="container-fluid">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
@@ -58,10 +67,10 @@
                         Aprovecha el tiempo de cuarentena y elabora el jardín de tus sueños con estos 9 simples 
                         pasos que te presentamos a continuación.
                     </p>
-                    <button class="btn btn-success btn-lg my-5">Empiza tú jardín ahora!</button>
+                    <button class="btn btn-success btn-lg my-2" data-bs-toggle="modal" data-bs-target="#enrolls">Empiza tú jardín ahora!</button>
 
                 </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="/images/Gardening-amico.svg" alt="Personas en el jardín">
+                <img class="img-fluid w-100 d-none d-sm-block" src="/images/Gardening-amico.svg" alt="Personas en el jardín">
             </div>
         </div>
      </section>
@@ -96,7 +105,7 @@
                             con extremado cuidado sobre las malas hierbas que deseas eliminar. <br> Esta es una forma muy eficaz 
                             de eliminar las plantas indeseadas que aparecen en los patios, las calzadas y las aceras.
                         </p>
-                        <a href="#" class="btn btn-success">Leer más</a>
+                        <a href="https://bit.ly/3vLRtUk" class="btn btn-success" target="_blank">Leer más</a>
                     </div>
                 </div>
                 <div class="col-md">
@@ -111,7 +120,7 @@
                            <li>Crea zonas diferenciadas con cambios de piso.</li>
                            <li> Utiliza distintos niveles en tu patio.</li>
                        </ol>
-                       <a href="#" class="btn btn-success">Leer más</a>
+                       <a href="https://bit.ly/3vLRtUk" class="btn btn-success" target="_blank">Leer más</a>
                     </div>
                 </div>
                 <div class="col-md">
@@ -124,7 +133,7 @@
                             Coloque su jardín donde lo verá y disfrútelo a menudo. <br> Esto también te motivará a cultivar más. Vamos a por 
                             las flores que puedes incluir en tu espacio al aire libre.
                         </p>
-                        <a href="#" class="btn btn-success">Leer más</a>
+                        <a href="https://bit.ly/3vLRtUk" class="btn btn-success" target="_blank">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +153,7 @@
                     <p class="lead">
                         Una excelente idea para aprovechar el poco espacio de tu jardín, es colocar un banco o asiento, rodeado de canteros o grandes macetas con frondosas plantas. La idea es que las plantas tapen los muros o vallas divisorias del jardín, de esa manera tendrás la ilusión de estar en medio de una selva o bosque. 
                     </p>
-                    <a href="#" class="btn btn-success mt-3">
+                    <a href="https://bit.ly/3vLRtUk" class="btn btn-success mt-3" target="_blank">
                         <i class="bi bi-chevron-right"></i> Leer más
                     </a>
                 </div>
@@ -171,7 +180,7 @@
                     <p class="lead">
                         Limpia el espacio donde ubicaras tu jardín, en caso de haber hierba debes retirala desde sus raíces con una pala. Recuerda que tus plantas necesitan un espacio libre para crecer de forma correcta. 
                     </p>
-                    <a href="#" class="btn btn-success mt-3">
+                    <a href="https://bit.ly/3vLRtUk" class="btn btn-success mt-3" target="_blank">
                         <i class="bi bi-chevron-right"></i> Leer más
                     </a>
                 </div>
@@ -192,7 +201,7 @@
                     <p class="lead">
                         Limpia el espacio donde ubicaras tu jardín, en caso de haber hierba debes retirala desde sus raíces con una pala. Recuerda que tus plantas necesitan un espacio libre para crecer de forma correcta.
                     </p>
-                    <a href="#" class="btn btn-success mt-3">
+                    <a href="https://bit.ly/3vLRtUk" class="btn btn-success mt-3" target="_blank">
                         <i class="bi bi-chevron-right"></i> Leer más
                     </a>
                 </div>
@@ -213,7 +222,7 @@
                     <p class="lead">
                         La labranza consiste en trazar surcos medianamente profundos en la tierra con el uso de una pala, esto le permitirá soltarse y le dará una textura fácil de manejar a la hora de plantar.
                     </p>
-                    <a href="#" class="btn btn-success mt-3">
+                    <a href="https://bit.ly/3vLRtUk" class="btn btn-success mt-3" target="_blank">
                         <i class="bi bi-chevron-right"></i> Leer más
                     </a>
                 </div>
@@ -235,7 +244,7 @@
                 <p class="lead">Además pregúntate cuánto tiempo le dedicaras a tu jardín, en caso ser poco te recomendamos las plantas que renacen cada año como las perennes que pueden ser lirios o rosas.</p>
                 <p class="lead">Pero si consideras dedicarle un mantenimiento habitual puedes plantar flores anuales como las caléndulas o girasoles, estas suelen ser más coloridas y duraderas, además crecen constantemente. </p>
                 <p class="lead">Sin embargo puedes combinar estos dos tipos de flores hasta crear tu jardín soñado. Por otro lado asegúrate que las flores escogidas sean adecuadas para tu zona o localidad en la que vives. </p>
-                <a href="#" class="btn btn-success mt-3">
+                <a href="https://bit.ly/3vLRtUk" class="btn btn-success mt-3" target="_blank">
                     <i class="bi bi-chevron-right"></i> Leer más
                 </a>
             </div>
@@ -256,7 +265,7 @@
                     <p class="lead">
                         En un centro de jardinería, vivero o mercado de productores, puedes comprar las plantas que desees o puedes semillas si deseas cultivar tu jardín desde cero.
                     </p>
-                    <a href="#" class="btn btn-success mt-3">
+                    <a href="https://bit.ly/3vLRtUk" class="btn btn-success mt-3" target="_blank">
                         <i class="bi bi-chevron-right"></i> Leer más
                     </a>
                 </div>
@@ -411,28 +420,95 @@
     </section>
     <!--Section preguntas frecuentes stop-->
 
-    <!--setions gardeners garden start-->
-    <section id="gardeners" class="p-5 bg-success">
+    <!--setions contacts and map start-->
+    <section class="p-5">
         <div class="container">
-            <h2 class="text-center text-white">
-                Instructores jardineros
-            </h2>
-            <p class="lead text-center text-white mb-5">
-                Anteriormente, nuestro instructor de la cabeza, Hilary ahora capacita al personal y los instructores de invitados en la enseñanza de jardinería sostenible y el currículo de desarrollo para nuestra clase.
-            </p>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body-text-center">
-                            <img class="rounded-circle mb-3" src="/images/avatars/men.png" alt="">
-                        </div>
-                    </div>
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Cantacto para más información</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Ubicación: </span> Colombia, Medellín
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Teléfono: </span> (+57) 123 45678910
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">E-mail: </span> Contact@jardineriaonline.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id='map' style='width: 650px; height: 350px; border-radius: 10px;'></div>
                 </div>
             </div>
         </div>
     </section>
-    <!--setions gardeners garden stop-->
+    <!--setions contacts and map stop-->
 
+    <!--footer start-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="le">
+                &copy; 2021 Copyright Todos los derechos reservados Diseñada con ayuda de este por parte de Traversy Media.
+            </p>
+            <!--Button up-->
+            <a href="#" class="position-absolute botton-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h5"></i>
+            </a>
+        </div>
+    </footer>
+    <!--footer stop-->
+
+    <!-- Modal start -->
+    <div class="modal fade" id="enrolls" tabindex="-1" aria-labelledby="enrolls" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="enrolls">¡Cómo Comenzar un Jardín!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">
+                    Todo el mundo quiere un jardín de revista, pero no todos saben cómo lograrlo. Algunos hasta piensan que no tienen buenas manos para las plantas, y dejan que las malas hierbas se apoderen de sus patios.
+                </p>
+                <p class="lead">
+                    Pues aquí vengo con buenas noticias. Lograr el jardín de tus sueños es más fácil de lo que imaginas. Es cuestión de ir paso por paso y no dejar que la frustración te venza. Entonces, a continuación te presento los pasos principales a seguir para que llegues a tu meta, creando un jardín de película.
+                </p>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="e-mail" class="col-form-label">Correo eléctronico</label>
+                        <input type="text" class="form-control" id="e-mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="col-form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-success">comenzar ahora!</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal stop-->
+
+<!--script mapbox-->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<!--code script mapbox-->
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamFyZGluZXJvYWRtaW4iLCJhIjoiY2txYTI5N2UxMDA1dzJvcXFndG4xMHY2eiJ9.I7k29Zz1YuIcennZ2GFoIA';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+</script>
 <!-- Bootstrap  5 Bundle with Popper Js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
